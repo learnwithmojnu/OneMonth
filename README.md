@@ -1,5 +1,5 @@
 ## concatenation
-- concatenation means add two or item
+- concatenation means add two or more item
 
 ## Javascript debugging
 
