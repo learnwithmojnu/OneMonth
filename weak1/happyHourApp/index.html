@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="Happy Hour App - How about a drink!?">
+		<meta name="keywords" content="happy hour, drink, beers">
+
+		<title>Happy Hour</title>
+		
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+
+		<script>
+		
+			// Our List of Bars
+			var bars = [
+				'Siggys',
+				'Blind Tiger',
+				'Zum Schneider',
+				'One Month',
+				'Home Sweet Home',
+				'Union Pool'
+			];
+
+			// Our List of Friends
+			var friends = [
+				'Mattan',
+				'Chris',
+				'Lee',
+				'Casey',
+				// 'that girl you forgot to text back',
+				// 'Kayne West',
+				// 'Priyanka'
+			];
+
+			var randomNumber = Math.floor(Math.random()*(bars.length));
+			console.log(bars.length);
+			var barname = bars[3];
+			var friendname = friends[randomNumber];
+			document.write(randomNumber + " ");
+			document.write("How about you go to <strong>" + barname + "</strong> with <strong>" + friendname + "</strong>?");
+			
+			/*For Assignment
+		1. I see random number between 0 to 5 because there are 6 elements in the bars array.
+
+		2. Yes, array index start with 0
+
+		3. if I replace bars[randomNumber] with bars[3] the I see constant string in website.
+
+		4. bars.length means how many element in the bars array
+
+		5. Math.floor method used to flooring a fractional number. (5.999999 to 5)
+
+		6. Math is a built-in object that has properties and methods for mathematical constants and functions. (mozilla)
+		Math.abs(number): convert negative number to positive number
+		Math.round(number): 4.49 = 4; 4.5 = 5
+		Math.ceil(number): 5.00000000001 = 6
+		Math.floor(number): 5.999999 = 5
+		Math.random(): return a random number 0.361235654
+
+		7. var friends = ['Mattan', 'Chris', 'Lee', 'Casey', 'that girl you forgot to text back', 'Kayne West', 'Priyanka'];
+
+		Bonus challenge: When we remove 3 friends from the list, there are only 4 element, index 0 to 3. But random number conatain 0 to 5 value. So we sometimes get undefined. 
+
+*/
+		</script>
+	</head>
+	<body>
+		<!-- PAGE CONTENT WILL BE PRINTED HERE --> 
+		
+	</body>
+</html>

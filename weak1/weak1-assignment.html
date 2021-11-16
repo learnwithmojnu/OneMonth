@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weak-1 Assignment</title>
+    <script>
+        var user = prompt("Who are you?");
+        var cars = ["BMW", "Toyota", "Ford Motor"];
+        var carImage = ["https://media.istockphoto.com/photos/illustration-of-generic-compact-car-perspective-view-picture-id1148853697",
+        "https://i.ibb.co/c66R3dw/campbell-3-ZUs-NJhi-Ik-unsplash.jpg",
+        "https://image.shutterstock.com/image-illustration/yellow-city-car-blank-surface-600w-1928383211.jpg"
+        ]
+        var randomNumber = Math.floor(Math.random()*cars.length);
+        if(user === "Chris" || user === "Mojnu"){
+            document.write(`<div><h2>Congratulations ${user}!!! You won ${cars[randomNumber]}</h2>
+                <img src=${carImage[randomNumber]} alt="car"/>
+                </div>`);
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

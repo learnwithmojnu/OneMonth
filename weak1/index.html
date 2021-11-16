@@ -7,16 +7,43 @@
     <title>Weak-1</title>
     <script>
         //create a variable
-        var username = "Mominul";
-        document.write(`<h1>${username}</h1>`);
-        alert('Congratulations!');
-        document.write("<h1>Hello, Mojnu! by JavaScript</h1>");
+        var username = prompt("Who are you?");
+        // alert('Congratulations!');
+        // document.write("<h6>Hello, Mojnu! by JavaScript</h6>");
 
         //concatenation
-        
+        var relation = "Father";
+        var firstName = "Shahadat";
+        var secondName = "Hossain";
+        document.write("<h1>" + relation + ": " + firstName + " " + secondName + "</h1>");
+
+        //add two number
+        var a = 5;
+        var b = 6;
+        var c = a + b;
+        document.write(c);
+
+        //if-else
+        /* 
+        if(username == "Mominul"){
+            document.write(`<h2>${username} is my little brother.</h2>`);
+        }
+        else{
+            document.write(`<h2>${username}, Sorry. You are not allowed!</h2>`);
+        }
+        */
+
+        //Array
+        var crush = ["Bithe", "Reshma", "Moushumi", "Unknown"];
+        if(username == "Google"){
+            document.write(`<h2>Your crush is ${crush[2]}</h2>`);
+        }
+        else{
+            document.write(`<h2>${username}, Sorry. You are not allowed!</h2>`);
+        }
     </script>
 </head>
 <body>
-    <h1>Hello Mojnu!</h1>
+   
 </body>
 </html>
