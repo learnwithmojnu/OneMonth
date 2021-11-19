@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>getElementByClassName</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+        }
+        .box {
+            width: 49%;
+            display: inline-block;
+            border: 1px solid black;
+        }
+        .image {
+            width: 50%;
+            height: 60vh;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Amader Berubari</h1>
+        <div class="box">
+            <img src="./nature2.jpg" alt="beauty of our berubari" class="image"/>
+        </div>
+        <div class="box">
+            <img src="./natur1.jpg" alt="beauty of our berubari" class="image"/>
+        </div>
+    </div>
+    <script>
+        var box = document.getElementsByClassName("box");
+        for(var index=0;index < box.length;index++){
+            box[index].style.border = "1px solid red";
+        }
+        var image = document.getElementsByClassName("image");
+        for (let i = 0; i < image.length; i++) {
+            image[i].style.width = "100%";
+        }
+    </script>
+</body>
+</html>

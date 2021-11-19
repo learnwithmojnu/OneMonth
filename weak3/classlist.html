@@ -4,15 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>querySelector</title>
+    <title>Create a html element</title>
 </head>
 <body>
-    <h1>Hello, I'm <span>JavaScript</span></h1>
+    <div class="div1">
+
+    </div>
 
     <script>
-        var changeSpanText = document.querySelector("span");
-        console.log(changeSpanText);
-        changeSpanText.innerHTML = `HTML`;
+        var newDiv = document.createElement('div');
+        var div1 = document.querySelector('.div1');
+        newDiv.classList.add("div2");
+        div1.appendChild(newDiv);
     </script>
 </body>
 </html>

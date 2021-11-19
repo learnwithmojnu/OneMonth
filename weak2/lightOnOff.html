@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light On Off</title>
+</head>
+<body>
+    <img src="https://www.w3schools.com/html/pic_bulboff.gif" alt="light" id="img"/>
+    <button class="buttonON">Turn ON</button>
+    <button class="buttonOFF">Turn OFF</button>
+    <script>
+        var img = document.querySelector("#img");
+        var buttonON = document.querySelector(".buttonON");
+        var buttonOFF = document.querySelector(".buttonOFF");
+        buttonON.addEventListener('click', function() {
+            img.src = "https://www.w3schools.com/html/pic_bulbon.gif";
+        });
+        buttonOFF.addEventListener('click', function() {
+            img.src = "https://www.w3schools.com/html/pic_bulboff.gif";
+        });
+    </script>
+</body>
+</html>

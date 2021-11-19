@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Print Bigger Name</title>
+</head>
+<body>
+    
+    <script>
+        const bigger = (nameArray) => {
+            let largest = nameArray[0].length;
+            for (let index = 0; index < nameArray.length; index++) {
+                const name = nameArray[index];
+                if(name.length > largest){
+                    return name + ' = I am Print because My name is bigger than all of you.'
+                }
+            }
+        }
+        document.write(bigger(["Surovi", "Sarmin", "Sumaiya", "Mojnu"]))
+    </script>
+</body>
+</html>
