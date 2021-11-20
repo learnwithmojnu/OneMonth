@@ -35,3 +35,7 @@
 - The setTimeout() method sets a timer which executes a function or specified piece of code once the timer expires
 
 ## Create GIF Search Engine
+
+## Local Storage
+`localStorage.setItem("key", value); localStorage.getItem("key");`
+- localStorage used to save data in the user's browser.

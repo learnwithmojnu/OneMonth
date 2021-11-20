@@ -5,17 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Create a html element</title>
+    <style>
+        div {
+            width: 100%;
+            margin: 10px;
+            height: 50px;
+            background-color: black;
+        }
+    </style>
 </head>
 <body>
     <div class="div1">
 
     </div>
-
+    <button class="btn">Create New Div</button>
     <script>
-        var newDiv = document.createElement('div');
-        var div1 = document.querySelector('.div1');
-        newDiv.classList.add("div2");
-        div1.appendChild(newDiv);
+        var btn = document.querySelector('.btn');
+        btn.addEventListener('click', function(){
+            var newDiv = document.createElement('div');
+            var div1 = document.querySelector('.div1');
+            newDiv.classList.add("div2");
+            div1.appendChild(newDiv);
+        })
     </script>
 </body>
 </html>
