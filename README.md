@@ -39,3 +39,9 @@
 ## Local Storage
 `localStorage.setItem("key", value); localStorage.getItem("key");`
 - localStorage used to save data in the user's browser.
+
+## push, pop, shift, reverse
+- The push() method adds new items to the end of an array and returns the new length.
+- The pop() method removes the last element from an array and returns that element.
+- The shift() method removes the first element from an array and returns that removed element.
+- The reverse() method reverses an array in place.
