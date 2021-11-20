@@ -45,3 +45,6 @@
 - The pop() method removes the last element from an array and returns that element.
 - The shift() method removes the first element from an array and returns that removed element.
 - The reverse() method reverses an array in place.
+
+## forEach and Map
+- the major difference is that forEach() affects and changes our original Array, whereas map() returns an entirely new Array—thus leaving the original array unchanged.
